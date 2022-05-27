@@ -1,9 +1,9 @@
 import React from 'react';
 
-import SideBar from './__public/sidebar/SideBar';
 import TopBar from './__public/topBar/TopBar';
+import SideBar from './__public/sidebar/SideBar';
 
-const AppScreen = ({ screen }) => {
+const AppTopScreen = ({ screen }) => {
   return (
     <div>
       <div className='flex flex-row h-screen bg-white'>
@@ -19,4 +19,4 @@ const AppScreen = ({ screen }) => {
   );
 };
 
-export default AppScreen;
+export default AppTopScreen;
