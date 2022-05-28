@@ -20,7 +20,7 @@ const SideBar = () => {
         <div className='flex'>
           <img src={masterPesaLogo} alt='masterpesa_logo' className='w-8 h-8' />
         </div>
-        <div className='flex flex-col justify-center items-center space-y-10 bg-primary w-full py-14 rounded-tr-full rounded-br-lg mr-6'>
+        <div className='flex flex-col justify-center items-center space-y-10 bg-primary w-full py-24 rounded-r-full mr-6'>
           <MenuItem
             id={__ROUTES.DASHBOARD.id}
             url={__ROUTES.DASHBOARD.route}
