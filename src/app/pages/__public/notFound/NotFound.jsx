@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { notFound } from '../../../../assets/assets';
+import { notFound } from '../../../../assets/index';
 import { __ROUTES } from '../../../features/__Routes/__Routes';
 
 const NotFound = () => {

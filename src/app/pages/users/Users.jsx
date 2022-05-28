@@ -2,7 +2,7 @@ import React from 'react';
 
 import AppTopScreen from '../__AppTopScreen';
 
-import { avatar } from '../../../assets/assets';
+import { avatar } from '../../../assets/index';
 import { AiOutlineDelete } from 'react-icons/ai';
 
 const Users = () => {

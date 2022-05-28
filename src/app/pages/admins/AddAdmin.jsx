@@ -2,7 +2,7 @@ import React from 'react';
 
 import AppTopScreen from '../__AppTopScreen';
 
-import { tanzania } from '../../../assets/assets';
+import { tanzania } from '../../../assets/index';
 import { IoIosArrowDown, IoIosAdd } from 'react-icons/io';
 
 const AddAdmin = () => {

@@ -1,7 +1,6 @@
 import React from 'react';
 
-import TopBar from './__public/topBar/TopBar';
-import SideBar from './__public/sidebar/SideBar';
+import { TopBar, SideBar } from './__public/index';
 
 const AppTopScreen = ({ screen }) => {
   return (

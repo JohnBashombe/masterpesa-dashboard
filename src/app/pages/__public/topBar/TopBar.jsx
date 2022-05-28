@@ -8,7 +8,7 @@ import {
 } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
-import { avatar } from '../../../../assets/assets';
+import { avatar } from '../../../../assets/index';
 import { __ROUTES } from '../../../features/__Routes/__Routes';
 
 const TopBar = () => {

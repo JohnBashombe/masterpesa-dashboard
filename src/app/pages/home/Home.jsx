@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HomeCard from '../../components/Cards/HomeCard';
+import { HomeCard } from '../../components/index';
 import AppTopScreen from '../__AppTopScreen';
 
 const Home = () => {
