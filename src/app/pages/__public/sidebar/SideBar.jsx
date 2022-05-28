@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { masterPesaLogo } from '../../../../assets/assets';
-import { __ROUTES } from '../../../features/__Routes/__Routes';
+import { __ROUTES } from '../../../features/index';
+import { masterPesaLogo } from '../../../../assets/index';
 
 import { useSideBarContext } from './__context/SideBarContext';
 

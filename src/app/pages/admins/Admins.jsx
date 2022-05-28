@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 
 import AppTopScreen from '../__AppTopScreen';
 
-import { avatar } from '../../../assets/assets';
+import { avatar } from '../../../assets/index';
 
 import { IoIosAdd } from 'react-icons/io';
 import { AiOutlineDelete } from 'react-icons/ai';
 
-import { __ROUTES } from '../../features/__Routes/__Routes';
+// import { DeleteModal } from '../../components/index';
+
+import { __ROUTES } from '../../features/index';
 
 const Admins = () => {
   return <AppTopScreen screen={<Panel />} />;
@@ -19,25 +21,28 @@ export default Admins;
 
 const Panel = () => {
   return (
-    <div className='my-4 mx-4 md:mx-10 flex flex-col'>
-      <div className='flex flex-row items-center justify-between border-2 border-gray-100 rounded-md px-4 py-3'>
-        <p className='text-base md:text-lg text-black font-bold uppercase my-2'>
-          Admins Management
-        </p>
-        <Link to={__ROUTES.ADD_ADMIN.route}>
-          <button className='flex items-center justify-start w-auto px-5 text-xs rounded-md bg-primary text-white font-bold h-10'>
-            <IoIosAdd className='w-6 h-6 text-white' />
-            <p>Add Admin</p>
-          </button>
-        </Link>
+    <>
+      {/* <DeleteModal name={'Admin'} /> */}
+      <div className='my-4 mx-4 md:mx-10 flex flex-col'>
+        <div className='flex flex-row items-center justify-between border-2 border-gray-100 rounded-md px-4 py-3'>
+          <p className='text-base md:text-lg text-black font-bold uppercase my-2'>
+            Admins Management
+          </p>
+          <Link to={__ROUTES.ADD_ADMIN.route}>
+            <button className='flex items-center justify-start w-auto px-5 text-xs rounded-md bg-primary text-white font-bold h-10'>
+              <IoIosAdd className='w-6 h-6 text-white' />
+              <p>Add Admin</p>
+            </button>
+          </Link>
+        </div>
+        <div className='flex flex-col my-4 space-y-3'>
+          <Data />
+          <Data />
+          <Data />
+          <Data />
+        </div>
       </div>
-      <div className='flex flex-col my-4 space-y-3'>
-        <Data />
-        <Data />
-        <Data />
-        <Data />
-      </div>
-    </div>
+    </>
   );
 };
 

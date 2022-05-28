@@ -2,8 +2,8 @@ import React from 'react';
 
 import AppTopScreen from '../__AppTopScreen';
 
-import { tanzania, avatar } from '../../../assets/assets';
 import { IoIosArrowDown } from 'react-icons/io';
+import { tanzania, avatar } from '../../../assets/index';
 
 const Settings = () => {
   return <AppTopScreen screen={<SettingsPanel />} />;
