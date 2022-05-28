@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DeleteModal({ showModal, setShowModal, name }) {
+const DeleteModal = ({ showModal, setShowModal, name }) => {
   return (
     <div>
       <div
@@ -86,6 +86,6 @@ function DeleteModal({ showModal, setShowModal, name }) {
       </div>
     </div>
   );
-}
+};
 
 export default DeleteModal;

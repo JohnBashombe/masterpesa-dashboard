@@ -15,8 +15,8 @@ import {
   AiOutlineLoading,
 } from 'react-icons/ai';
 
-import { useAuthContext } from '../../__context/index';
 import { Alert } from '../../components/index';
+import { useAuthContext } from '../../__context/index';
 
 const Login = () => {
   const { _auth, _authEmail, _authPass } = useAuthContext();
