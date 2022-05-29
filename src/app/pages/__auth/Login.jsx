@@ -40,12 +40,16 @@ const Login = () => {
       setSuccess(null);
       setLoading(false);
     } else {
-      const { token } = await _authEmail(
+      setError(null);
+      setSuccess(null);
+      const { token, message } = await _authEmail(
         {
           email: email,
         },
         null
       );
+
+      const _res = message;
 
       if (token) {
         const { data, message } = await _authPass(
@@ -54,7 +58,6 @@ const Login = () => {
           },
           token
         );
-
         if (data) {
           setSuccess('Welcome!');
           setError(null);
@@ -65,6 +68,12 @@ const Login = () => {
           setError('Unknown Error.');
           setSuccess(null);
         }
+      } else if (_res === 'account deleted') {
+        setError('Account Deleted.');
+        setSuccess(null);
+      } else if (_res === 'account suspended') {
+        setError('Account Suspended.');
+        setSuccess(null);
       } else {
         setError('Wrong credentials.');
         setSuccess(null);

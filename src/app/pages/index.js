@@ -1,8 +1,8 @@
 export { NotFound } from './__public/index';
-export { default as Users } from './users/Users';
+export { AdminIndex } from './admins/AdminIndex';
 export { default as Login } from './__auth/Login';
-export { default as Admins } from './admins/Admins';
-export { default as AddAdmin } from './admins/AddAdmin';
+export { AddAdminIndex } from './admins/AdminIndex';
 export { default as IndexHome } from './home/HomeIndex';
-export { default as Settings } from './settings/Settings';
-export { default as Transactions } from './transactions/Transactions';
+export { default as UserIndex } from './users/UserIndex';
+export { default as SettingsIndex } from './settings/SettingsIndex';
+export { default as TransIndex } from './transactions/TransactionIndex';
