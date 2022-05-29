@@ -16,6 +16,8 @@ All notable changes to this project will be documented in this file.
 
 - Home [Feature/Implemenetation] - Home Statistics - Ntavigwa Bashombe - May 28, 2022
 
+- Users / Admins / Settings / Transaction [Feature/Implemenetation] - Database Connection - Ntavigwa Bashombe - May 29, 2022
+
 #### Launch v0.001 - DO SEE AFRICA API
 
 ##### Stats
