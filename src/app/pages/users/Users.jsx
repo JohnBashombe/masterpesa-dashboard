@@ -47,7 +47,7 @@ const UserPanel = ({ user }) => {
     );
   } else if (user.length === 0) {
     return (
-      <div className='flex flex-col w-full justify-center items-center py-10 px-4 md:px-10'>
+      <div className='flex flex-col w-full justify-center items-center py-10 px-4'>
         <span className='text-sm my-10 font-bold text-primary uppercase'>
           No User Found
         </span>
@@ -72,13 +72,13 @@ const UserPanel = ({ user }) => {
         setError={setError}
         setSuccess={setSuccess}
       />
-      <div className='my-4 mx-4 md:mx-10 flex flex-col'>
-        <div className='flex flex-row items-center justify-between border-2 border-gray-100 rounded-md px-4 py-3'>
-          <p className='text-base md:text-lg text-black font-bold uppercase my-2'>
+      <div className='my-4 px-4 flex flex-col justify-center items-center w-auto'>
+        <div className='flex flex-row w-full items-center justify-between border-2 border-gray-100 rounded-md px-4 py-3'>
+          <p className='text-sm md:text-lg text-black font-bold uppercase my-2'>
             Users Management
           </p>
         </div>
-        <div className='flex flex-col my-4 space-y-3'>
+        <div className='flex w-full md:w-auto flex-col my-4 space-y-3'>
           {user.map((_user_, index) => {
             return (
               <Data

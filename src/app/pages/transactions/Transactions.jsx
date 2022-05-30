@@ -44,11 +44,11 @@ const TransactionPanel = ({ data }) => {
   }
 
   return (
-    <div className='my-4 mx-4 md:mx-10 flex flex-col'>
-      <p className='text-base md:text-lg text-black font-bold uppercase my-2'>
+    <div className='my-4 flex flex-col justify-center items-center w-full px-4'>
+      <p className='text-sm md:text-lg text-black font-bold uppercase my-2'>
         Transactions
       </p>
-      <div className='flex flex-col my-4 space-y-3'>
+      <div className='flex flex-col w-full lg:w-auto my-4 space-y-3 space-x-4'>
         {data.map((tx, index) => {
           return (
             <Record
@@ -67,7 +67,7 @@ const TransactionPanel = ({ data }) => {
 
 const Record = ({ type, date, amount, status }) => {
   return (
-    <div className='flex flex-col md:flex-row items-center justify-between shadow space-y-2 md:space-y-0 py-2 px-4 rounded-md border-[1px] border-gray-100'>
+    <div className='flex flex-col md:flex-row items-center justify-between shadow space-y-2 space-x-4 md:space-y-0 py-2 px-4 rounded-md border-[1px] border-gray-100'>
       <p className='text-sm text-gray-400 font-medium'>{type}</p>
       <p className='text-sm text-gray-400 font-medium'>{date}</p>
       <p className='text-sm text-gray-400 font-medium'>Tsh {amount}</p>

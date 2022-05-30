@@ -96,12 +96,14 @@ const Login = () => {
       <div className='bg-white lg:bg-brand flex h-full flex-col px-4 xl:px-20'>
         <div className='flex flex-col justify-center items-center border-2 border-gray-100 rounded-lg lg:rounded-none lg:border-0 mt-4 lg:py-5'>
           <div className='relative hidden lg:flex flex-col justify-center items-center'>
-            <p className='text-5xl text-gray-700 font-medium'>Welcome back</p>
+            <p className='text-5xl md:mt-14 text-gray-700 font-medium'>
+              Welcome back
+            </p>
             <p className='text-sm text-gray-700 mt-2'>
               Join the world's largest community
             </p>
             <div
-              className='absolute -right-40 top-0 bg-white w-10 py-4 flex flex-col items-center
+              className='absolute -right-40 top-14 bg-white w-10 py-4 flex flex-col items-center
            justify-between rounded-xl px-2'
             >
               <FaMicrophoneSlash className='text-secondary w-5 h-5' />
@@ -203,7 +205,10 @@ const Login = () => {
                           </>
                         )}
                       </button>
-                      <button className='bg-secondary w-full lg:w-1/3 xl:w-1/4 min-w-[280px] shadow px-4 py-3 text-white font-bold rounded-md text-xs'>
+                      <button
+                        type='button'
+                        className='bg-secondary w-full lg:w-1/3 xl:w-1/4 min-w-[280px] shadow px-4 py-3 text-white font-bold rounded-md text-xs'
+                      >
                         Create New Account
                       </button>
                     </div>

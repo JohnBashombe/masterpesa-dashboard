@@ -166,10 +166,10 @@ const SettingsPanel = () => {
         setSuccess={setSuccess}
       />
 
-      <div className='w-full flex flex-row items-center justify-center xl:justify-start'>
-        <div className='flex flex-row items-start justify-between w-full xl:w-3/6'>
-          <div className='my-4 mx-4 md:mx-10 flex flex-col h-full w-full'>
-            <p className='text-base md:text-lg font-bold text-gray-700'>
+      <div className='w-full flex flex-row items-center justify-center'>
+        <div className='flex flex-row items-start justify-between w-full xl:w-1/2'>
+          <div className='my-4 mx-4 lg:mx-10 flex flex-col h-full w-full'>
+            <p className='text-sm md:text-lg font-bold text-gray-700'>
               General Settings
             </p>
             <p className='text-xs md:text-sm text-gray-400 font-medium mt-1 mb-3'>
