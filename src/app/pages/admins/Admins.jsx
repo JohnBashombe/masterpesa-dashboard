@@ -50,7 +50,7 @@ const Panel = ({ data }) => {
     );
   } else if (data.length === 0) {
     return (
-      <div className='flex flex-col w-full justify-center items-center py-10 px-4 md:px-10'>
+      <div className='flex flex-col w-full justify-center items-center py-10 px-4'>
         <div className='w-full flex flex-row items-center justify-between border-2 border-gray-100 rounded-md px-4 py-3'>
           <p className='text-base md:text-lg text-black font-bold uppercase my-2'>
             Admins Management
@@ -85,19 +85,19 @@ const Panel = ({ data }) => {
         setError={setError}
         setSuccess={setSuccess}
       />
-      <div className='my-4 mx-4 md:mx-10 flex flex-col'>
-        <div className='flex flex-row items-center justify-between border-2 border-gray-100 rounded-md px-4 py-3'>
-          <p className='text-base md:text-lg text-black font-bold uppercase my-2'>
+      <div className='my-4 px-4 flex flex-col items-center justify-center w-auto'>
+        <div className='flex flex-col w-full space-y-1 md:space-y-0 md:flex-row md:items-center justify-between border-2 border-gray-100 rounded-md px-4 py-3'>
+          <p className='text-sm md:text-lg text-black font-bold uppercase my-2'>
             Admins Management
           </p>
           <Link to={__ROUTES.ADD_ADMIN.route}>
-            <button className='flex items-center justify-start w-auto px-5 text-xs rounded-md bg-primary text-white font-bold h-10'>
-              <IoIosAdd className='w-6 h-6 text-white' />
-              <p>Add Admin</p>
+            <button className='flex items-center justify-center w-full md:w-auto px-4 text-xs rounded-md bg-primary text-white font-bold h-10'>
+              <IoIosAdd className='h-4 w-4 md:w-6 md:h-6 text-white' />
+              <p className='text-xs md:text-sm'>Add Admin</p>
             </button>
           </Link>
         </div>
-        <div className='flex flex-col my-4 space-y-3'>
+        <div className='flex w-full md:w-auto flex-col my-4 space-y-3 '>
           {data.map((_admin_, index) => {
             return (
               <Data

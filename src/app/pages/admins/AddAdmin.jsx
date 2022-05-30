@@ -108,15 +108,15 @@ const Panel = () => {
       <form onSubmit={add}>
         <div className='w-full flex flex-row items-center justify-center xl:justify-start'>
           <div className='flex flex-row items-start justify-between w-full xl:w-3/6'>
-            <div className='my-4 mx-4 md:mx-10 flex flex-col h-full w-full'>
-              <p className='text-base md:text-lg font-bold text-gray-700'>
+            <div className='my-4 mx-4 lg:mx-10 flex flex-col h-full w-full'>
+              <p className='text-sm md:text-lg font-bold text-gray-700'>
                 Add New Admin
               </p>
               <p className='text-xs md:text-sm text-gray-400 font-medium mt-1 mb-3'>
                 Add Admin personal details here.
               </p>
 
-              <div className='flex flex-col py-2 px-6 my-4 border-2 border-gray-200 h-full'>
+              <div className='flex flex-col py-2 px-6 my-4 border-2 border-gray-100 h-full'>
                 <p className='font-bold text-sm mt-2 mb-6 text-gray-700'>
                   Personal Information
                 </p>

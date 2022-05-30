@@ -18,6 +18,8 @@ All notable changes to this project will be documented in this file.
 
 - Users / Admins / Settings / Transaction [Feature/Implemenetation] - Database Connection - Ntavigwa Bashombe - May 29, 2022
 
+- System Design [Feature/Implemenetation] - Update [Padding | Margin Fixing] - Ntavigwa Bashombe - May 31, 2022
+
 #### Launch v0.001 - DO SEE AFRICA API
 
 ##### Stats
